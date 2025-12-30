@@ -1,0 +1,127 @@
+/* Second.css */
+
+.second-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  padding: 20px;
+}
+
+.second-image {
+  width: 200px;
+  height: auto;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.second-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin: 10px 0;
+}
+
+.second-subtitle {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #c2185b;
+  margin-bottom: 30px;
+}
+
+.next-button {
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #c2185b;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.next-button:hover {
+  background-color: #ad1457;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+/* ===== Last Page Styles ===== */
+/* ===== First Page Styles ===== */
+/* Button spacing for Last page */
+.last-button {
+  margin-top: 250px;
+}
+.first-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.last-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.first-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 16px 24px;
+
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+
+  animation: fadeDown 1s ease;
+}
+
+/* Different button for First page */
+.first-button {
+  padding: 14px 40px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000;
+  background: #ffffff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.first-button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* simple intro animation */
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
